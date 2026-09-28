@@ -40,7 +40,13 @@ export default class Authors extends React.Component {
               </span>
             );
           })}
-          <span className="uk-width-1-1">{this.props.meta}</span>
+          {this.props.meta && (
+            <div className="uk-width-1-1">
+              {[].concat(this.props.meta).map((line, idx) => (
+                <div key={'meta-' + idx}>{line}</div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     );

@@ -7,7 +7,7 @@ resources:
   paper: https://arxiv.org/abs/2609.22677
   poster:
   code:
-  video:
+  video: https://www.youtube.com/embed/zL9i65XA21g?si=xX8MQBFOY9h68bb_
   blog:
   demo:
   huggingface:
@@ -20,11 +20,11 @@ url: https://omron-sinicx.github.io/shaft/
 speakerdeck:
 authors:
   - name: Tomoya Takahashi
-    affiliation: [1]
+    affiliation: [1, '†']
     position: Project Researcher
     url:
   - name: Moses Gladson Selvamuthu
-    affiliation: [2]
+    affiliation: [2, '†']
     position:
     url:
   - name: Richiro Tadakuma
@@ -42,7 +42,7 @@ authors:
     #  - name: Asako Kanezaki
     #    affiliation: [2]
     #    url: https://kanezaki.github.io/
-contact_ids: ['github', 'omron', 1] #=> github issues, contact@sinicx.com, 1st author (1-indexed)
+contact_ids: ['omron', 1] #=> contact@sinicx.com, 1st author (1-indexed)
 affiliations:
   - OMRON SINIC X Corporation
   - Yamagata University
