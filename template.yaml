@@ -15,7 +15,7 @@ description:
   This study proposes SHAFT, a flexible-shaft transmission mechanism that compensates for slack with a proximal tensioner to suppress helical buckling in lightweight, remotely actuated manipulators.
   Compared with a flexible shaft without a tensioner, SHAFT improves transmission efficiency by about 30% and reduces angular transmission error by about 65% on a path with four 90-degree bends.
   Using SHAFT, we built a 6-DoF arm with a 1-DoF gripper whose arm module weighs only 280 g.
-image: https://omron-sinicx.github.io/shaft/concept.png
+image: https://omron-sinicx.github.io/shaft/teaser.png
 url: https://omron-sinicx.github.io/shaft/
 speakerdeck:
 authors:
@@ -24,7 +24,7 @@ authors:
     position: Project Researcher
     url:
   - name: Moses Gladson Selvamuthu
-    affiliation: [2, '†']
+    affiliation: [2, '†', '*']
     position:
     url:
   - name: Richiro Tadakuma
