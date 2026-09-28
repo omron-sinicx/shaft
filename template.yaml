@@ -1,49 +1,40 @@
 theme: default # default || dark
 organization: OMRON SINIC X
 twitter: '@omron_sinicx'
-title: 'SCU-Hand: Soft Conical Universal Robotic Hand for Scooping Granular Media from Containers of Various Sizes'
-conference: ICRA2025
+title: 'SHAFT: A Slack-Compensating, Helical-Buckling-Attenuating Flexible-Shaft Transmission for Lightweight Multi-DoF Manipulation'
+conference: IROS2026
 resources:
-  paper: https://arxiv.org/abs/2505.04162
+  paper: https://arxiv.org/abs/2609.22677
   poster:
-  code: 
-  video: https://www.youtube.com/embed/Cf0wMz6eIsM?si=6FeTzsG1rGPuFz50
-  blog: 
-  demo: 
-  huggingface: 
-description: This study proposes SCU-Hand, a soft and reconfigurable end-effector designed to scoop powdered materials from containers of various sizes using a general-purpose robotic arm.
- By deforming a single thin sheet into a conical shape, the SCU-Hand achieves adaptive surface contact without complex sensors or control algorithms, while maintaining the stiffness needed for efficient scooping.
- Experimental results demonstrate that SCU-Hand achieves over 95% scooping performance across different container sizes and granular materials, outperforming conventional rigid tools by up to 20%.
-image: https://omron-sinicx.github.io/scu-hand/concept.png
-url: https://omron-sinicx.github.io/scu-hand
-speakerdeck: 
+  code:
+  video:
+  blog:
+  demo:
+  huggingface:
+description:
+  This study proposes SHAFT, a flexible-shaft transmission mechanism that compensates for slack with a proximal tensioner to suppress helical buckling in lightweight, remotely actuated manipulators.
+  Compared with a flexible shaft without a tensioner, SHAFT improves transmission efficiency by about 30% and reduces angular transmission error by about 65% on a path with four 90-degree bends.
+  Using SHAFT, we built a 6-DoF arm with a 1-DoF gripper whose arm module weighs only 280 g.
+image: https://omron-sinicx.github.io/shaft/concept.png
+url: https://github.com/omron-sinicx/shaft
+speakerdeck:
 authors:
   - name: Tomoya Takahashi
     affiliation: [1]
-    url: 
     position: Project Researcher
-    
-  - name: Cristian C. Beltran-Hernandez
-    affiliation: [1]
-    position: Senior Researcher
-    url: 
-  - name: Yuki Kuroda
-    affiliation: [1]
-    position: Project Researcher
-    url: 
-    
+    url:
+  - name: Moses Gladson Selvamuthu
+    affiliation: [2]
+    position:
+    url:
+  - name: Richiro Tadakuma
+    affiliation: [2]
+    position:
+    url:
   - name: Kazutoshi Tanaka
     affiliation: [1]
     position: Senior Researcher
-    url: 
-  - name: Masahi Hamaya
-    affiliation: [1]
-    position: Principal Investigator
-    url: https://sites.google.com/view/masashihamaya/home
-  - name: Yoshitaka Ushiku
-    affiliation: [1]
-    position: Vice President for Research
-    url: 
+    url:
 
     #  - name: Mai Nishimura
     #    affiliation: [1]
@@ -51,29 +42,23 @@ authors:
     #  - name: Asako Kanezaki
     #    affiliation: [2]
     #    url: https://kanezaki.github.io/
-contact_ids: ['github', 'omron', 1] #=> github issues, contact@sinicx.com, 2nd author
+contact_ids: ['github', 'omron', 0] #=> github issues, contact@sinicx.com, 1st author
 affiliations:
   - OMRON SINIC X Corporation
-meta: null
-  #- '* work done as an intern at OMRON SINIC X.'
+  - Yamagata University
+meta:
+  - '† Equal contribution.'
+  - '* Work done during internships at OMRON SINIC X.'
+  - 'This work was supported by JSPS KAKENHI Grant Number JP25H01159, Japan.'
 bibtex: >
 
   # arXiv version
-  
-  @article{takahashi2025scuhand,
-      title={SCU-Hand: Soft Conical Universal Robotic Hand for Scooping Granular Media from Containers of Various Sizes}, 
-      author={Takahashi, Tomoya and Beltran-Hernandez, Cristian C. and Kuroda, Yuki and Tanaka, Kazutoshi and Hamaya, Masashi and  Ushiku, Yoshitaka},
-      journal={arXiv preprint arXiv:2505.04162},
-      year={2025}
-  }
 
-  # ICRA version
-  
-  @inproceedings{takahashi2025scuhand,
-    title={SCU-Hand: Soft Conical Universal Robotic Hand for Scooping Granular Media from Containers of Various Sizes},
-    author={Takahashi, Tomoya and Beltran-Hernandez, Cristian C. and Kuroda, Yuki and Tanaka, Kazutoshi and Hamaya, Masashi and  Ushiku, Yoshitaka},
-    journal={2025 IEEE international conference on robotics and automation (ICRA)},
-    year={2025}
+  @article{takahashi2026shaft,
+      title={SHAFT: A Slack-Compensating, Helical-Buckling-Attenuating Flexible-Shaft Transmission for Lightweight Multi-DoF Manipulation}, 
+      author={Takahashi, Tomoya and Selvamuthu, Moses Gladson and Tadakuma, Richiro and Tanaka, Kazutoshi},
+      journal={arXiv preprint arXiv:2609.22677},
+      year={2026}
   }
 
 header:
@@ -81,9 +66,9 @@ header:
     sinic_curve.png
     #  bg_image: https://github.com/omron-sinicx/swarm-body/raw/main/images/teaser.jpg
 
-teaser: concept.png
+teaser: teaser.png
 overview: |
-  Automating small-scale experiments in materialsscience presents challenges due to the heterogeneous natureof experimental setups. This study introduces the SCU-Hand(Soft Conical Universal Robot Hand), a novel end-effectordesigned to automate the task of scooping powdered samplesfrom various container sizes using a robotic arm. The SCU-Hand employs a flexible, conical structure that adapts to dif-ferent container geometries through deformation, maintainingconsistent contact without complex force sensing or machinelearning-based control methods. Its reconfigurable mechanismallows for size adjustment, enabling efficient scooping fromdiverse container types. By combining soft robotics principleswith a sheet-morphing design, our end-effector achieves highflexibility while retaining the necessary stiffness for effectivepowder manipulation. We detail the design principles, fabri-cation process, and experimental validation of the SCU-Hand.Experimental validation showed that the scooping capacity isabout 20% higher than that of a commercial tool, with ascooping performance of more than 95% for containers ofsizes between 67 mm to 110 mm. This research contributesto laboratory automation by offering a cost-effective, easilyimplementable solution for automating tasks such as materialssynthesis and characterization processes.
+  Slim, lightweight manipulators are key to operating safely around people. Placing motors near the base and sending torque to distal joints through remote transmissions (e.g., wires or Bowden cables) lowers arm inertia and size, but existing designs either add mass (pulleys for redirection) or lose efficiency to friction. Flexible-shaft transmission avoids both issues, yet slack that appears when joints bend causes helical buckling and growing angular transmission error. We propose SHAFT, a Slack-compensating, Helical-buckling-Attenuating Flexible-shaft Transmission that removes this slack with a tensioner located at the proximal side, so the moving mass of the arm does not increase. On a transmission path with four 90-degree bends, SHAFT achieved roughly 30% higher efficiency and roughly 65% lower angular transmission error than a flexible shaft without a tensioner. We also built a 6-DoF arm with a 1-DoF gripper, composed of a rotary module that houses the motors and tensioner and an arm module weighing 280 g. This remote actuation approach offers a lightweight, efficient path toward deploying safe robots in human environments.
 
 body: null
 
