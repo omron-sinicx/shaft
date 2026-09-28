@@ -16,7 +16,7 @@ description:
   Compared with a flexible shaft without a tensioner, SHAFT improves transmission efficiency by about 30% and reduces angular transmission error by about 65% on a path with four 90-degree bends.
   Using SHAFT, we built a 6-DoF arm with a 1-DoF gripper whose arm module weighs only 280 g.
 image: https://omron-sinicx.github.io/shaft/concept.png
-url: https://github.com/omron-sinicx/shaft
+url: https://omron-sinicx.github.io/shaft/
 speakerdeck:
 authors:
   - name: Tomoya Takahashi
@@ -42,7 +42,7 @@ authors:
     #  - name: Asako Kanezaki
     #    affiliation: [2]
     #    url: https://kanezaki.github.io/
-contact_ids: ['github', 'omron', 0] #=> github issues, contact@sinicx.com, 1st author
+contact_ids: ['github', 'omron', 1] #=> github issues, contact@sinicx.com, 1st author (1-indexed)
 affiliations:
   - OMRON SINIC X Corporation
   - Yamagata University
